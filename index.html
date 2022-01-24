@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="app-name">weather app</h1>
+    <h2 class="city-search"></h2>
+    <div class="select-city">
+      <input type="text" placeholder="write city name..." required class="city"> <button class="send">Send</button>
+      <img src="./gallery/cloud.png" alt="" class="cloud">
+    </div>
+    <div class="parameters">
+      <h2 class="weather">weather:</h2>
+      <h2 class="temperature">temperature:</h2>
+      <h2 class="humidity">humidity:</h2>
+    </div>
+    <div class="parameters-show">
+      <p class="weather-show"></p>
+      <p class="temperature-show"></p>
+      <p class="humidity-show"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

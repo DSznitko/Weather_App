@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: "Montserrat"
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background: linear-gradient(to right, #0F2027, #203A43, #0082c8);
+  
+}
+
+
+.wrapper {
+  height: 60%;
+  width: 90%;
+  background: linear-gradient( to right,#000046, #1CB5E0);
+  overflow: hidden;
+  border-radius: 9px;
+  border: 2px solid white;
+}
+
+
+.app-name {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  font-weight: bold;
+  padding: 4% 2%;
+  color: white;
+}
+
+.city-search {
+text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  font-weight: bold;
+  padding: 0 2%;
+  color: darkgray;
+}
+
+.select-city {
+  width: 100%;
+}
+
+.city {
+  width: 42%;
+  background: transparent;
+  border: none;
+  padding: 2% 4%;
+  margin-left: 1%;
+  font-family: var(--main-font);
+  font-size: 0.7rem;
+  border-bottom: 1px solid white;
+  color: white;
+  z-index: 5;
+}
+
+.city:focus {
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.send {
+  background: transparent;
+  font-family: var(--main-font);
+  font-size: 0.8rem;
+  padding: 2% 2%;
+  border: 1px solid white;
+  margin: 2% 2%;
+  border-radius: 5px;
+  font-family: var(--main-font);
+color: white;
+cursor: pointer;
+transition: all 0.4s ease-in;
+}
+
+.send:hover {
+  color: black;
+  background-color: white;
+}
+
+.cloud {
+  width: 32%;
+  height: 20%;
+  object-fit: cover;
+  padding: 2%;
+}
+
+.parameters {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  margin: 6% auto;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+.weather, .temperature, .humidity {
+  font-size: 0.6rem;
+  color: white;
+  font-family: var(--main-font);
+}
+
+.parameters-show {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  margin: 4% auto;
+  text-align: center;
+}
+
+.weather-show, .temperature-show, .humidity-show {
+  font-size: 0.6rem;
+  color: white;
+  font-family: var(--main-font);
+}
+
+/* MEDIA START */
+
+
+
+@media(min-width: 768px) {
+  .app-name {
+    font-size: 2.5rem;
+  }
+
+  .wrapper {
+    height: 50%;
+    width: 90%;
+}
+
+.city {
+  width: 35%;
+  background: transparent;
+  border: none;
+  padding: 2% 4%;
+  margin-left: 5%;
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  border-bottom: 1px solid white;
+  color: black;
+  z-index: 5;
+}
+
+.send {
+  font-size: 1.2rem;
+  padding: 2% 5%;
+  border: 1px solid white;
+  margin: 2% 4%;
+}
+.cloud {
+  width: 32%;
+  height: 20%;
+  object-fit: cover;
+  padding: 2%;
+}
+
+.parameters {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  margin: 6% auto;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+.weather, .temperature, .humidity {
+  font-size: 1.3rem;
+  color: white;
+  font-family: var(--main-font);
+}
+
+.weather-show, .temperature-show, .humidity-show {
+  font-size: 1.3rem;
+  color: white;
+  font-family: var(--main-font);
+}
+ }
+
+ @media(min-width: 768px) {
+  .wrapper {
+    height: 60%;
+    width: 93%;
+}
+ }
+
+ @media(min-width: 950px) {
+   .wrapper {
+     height: 65%;
+   }
+ }
+
+ @media(min-width: 1050px) {
+  .wrapper {
+    height: 68%;
+  }
+
+  .parameters {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    margin: 4% auto;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-align: center;
+  }
+   }
+
+   @media(min-width: 1050px) {
+    .wrapper {
+      height: 70%;
+    }
+
+    .app-name {
+      text-align: center;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-family: var(--main-font);
+      font-weight: bold;
+      padding: 2% 2%;
+      color: white;
+    }
+     }
+     @media(min-width: 1200px) {
+      .city-search {
+        text-align: center;
+          font-size: 2rem;
+          text-transform: uppercase;
+          font-family: var(--main-font);
+          font-weight: bold;
+          padding: 0 2%;
+          color: darkgray;
+        }
+        .wrapper {
+          width: 70%;
+          height: 70%;
+        }
+     }
+
+     @media(min-width: 1400px) {
+      .wrapper {
+        width: 70%;
+      }
+     }
+
+     @media(min-width: 1430px) {
+       .wrapper {
+         height: 75%;
+       }
+     }
+
+     @media(min-width: 1560px) {
+      .wrapper {
+        height: 78%;
+        width: 60%;
+      }
+
+      .parameters {
+        width: 90%;
+     }
+
+      }
+      
